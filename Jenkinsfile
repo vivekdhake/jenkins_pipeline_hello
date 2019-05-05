@@ -16,3 +16,11 @@ node {
         echo "deploying"
     }
 }
+stage ('Get approval'){
+ input "deplay to prepord?"   
+}
+node {
+    stage('deploy to preprod'){
+        echo "deploing to reprod"
+    }   
+}
